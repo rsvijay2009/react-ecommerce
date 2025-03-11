@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/Productlist.css';
+import '../styles/ProductList.css';
 import Loading from './Loading';
 
 function ProductList() {
