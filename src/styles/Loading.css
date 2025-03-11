@@ -1,0 +1,58 @@
+/* Center the loading container */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  /* Animated Shopping Cart */
+  .cart-spinner {
+    font-size: 4rem;
+    animation: rotate 1s linear infinite, bounce 1.5s ease-in-out infinite alternate;
+  }
+  
+  /* Rotation Animation */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Animated Loading Text */
+  .loading-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 12px;
+    font-weight: 500;
+    animation: fadeInOut 2s ease-in-out infinite;
+  }
+  
+  /* Fade In/Out Animation */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  
