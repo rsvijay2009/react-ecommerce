@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import useCartStore from "../../store/cartStore"; // Ensure this is the correct path
-import "./Checkout.css";
+import "./checkout.css";
 
 const Checkout = () => {
   const cartItemsFromStore = useCartStore((state) => state.cart); // Zustand store
