@@ -1,0 +1,136 @@
+/* Section Styling */
+.deal-of-the-day {
+    position: relative;
+    height: 500px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+    padding: 20px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); /* Adds depth */
+    margin-top: 70px;
+}
+
+/* Content Styling */
+.deal-content {
+    width: 40%; /* Content occupies 40% of the section */
+    padding: 20px;
+    border-radius: 10px; /* Smooth edges for container */
+}
+
+.deal-text {
+    text-align: left;
+}
+
+.deal-text h3 {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #82ae46;
+    font-family: "Lora", Georgia, serif;
+    letter-spacing: 0.5px;
+}
+
+.deal-text h1 {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.deal-text p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.deal-text h2 {
+    font-size: 24px;
+    color: #82ae46; /* Green color for emphasis */
+    margin-bottom: 5px;
+}
+
+/* Price Styling */
+.price {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.price .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.price .new-price {
+    font-weight: bold;
+    color: #e63946; /* Red for the new price */
+}
+
+.price .discount-note {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Countdown Styling */
+.countdown {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.countdown-item h3 {
+    font-size: 40px;
+    color: #82ae46;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.countdown-item p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .deal-content {
+        width: 80%; /* Content occupies more space on smaller screens */
+    }
+
+    .deal-of-the-day {
+        height: auto; /* Dynamic height for smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .deal-text h1 {
+        font-size: 28px;
+    }
+
+    .deal-text h2 {
+        font-size: 20px;
+    }
+
+    .countdown {
+        flex-direction: row; /* Ensures countdown stays horizontal */
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .deal-content {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .deal-text h1 {
+        font-size: 24px;
+    }
+
+    .deal-text h2 {
+        font-size: 18px;
+    }
+}

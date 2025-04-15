@@ -1,0 +1,98 @@
+/* Footer Container */
+.footer-container {
+    background-color: #fff; /* Light gray background */
+    color: #333; /* Text color */
+    padding: 20px 40px; /* Spacing from the edges */
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Content */
+.footer-content {
+    max-width: 1200px; /* Center footer content */
+    margin: 0 auto; /* Centers content horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space columns evenly */
+    gap: 20px; /* Adds space between columns */
+}
+
+/* Footer Columns */
+.footer-column {
+    flex: 1 1 calc(25% - 20px); /* Four equal columns */
+    min-width: 200px;
+    text-align: left; /* Aligns column content to the left */
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;       /* Removes default padding */
+    margin: 0;        /* Ensures consistent positioning */
+}
+
+ul li {
+    margin-bottom: 10px; /* Adds spacing between items */
+    display: flex;       /* Ensures items align horizontally */
+    align-items: center; /* Vertically centers icons and text */
+    text-indent: 0;      /* Removes any unintended indentation */
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ul li:first-child {
+    margin-top: 0; /* Makes sure the first item is not misaligned */
+}
+
+/* Social Icons Row */
+.social-icons-row {
+    display: flex; /* Ensures icons are in a single row */
+    justify-content: center; /* Centers the row horizontally */
+    gap: 18px; /* Adds space between icons */
+}
+
+.social-icons-row a {
+    color: #333; /* Neutral color for icons */
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Contact Info Icons */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li svg {
+    margin-right: 8px; /* Adds space between the icon and text */
+}
+
+/* Copyright Section */
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd; /* Light border */
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stacks columns vertically */
+        align-items: center; /* Centers columns */
+    }
+
+    .footer-column {
+        flex: 1 1 100%; /* Columns take full width */
+        margin-bottom: 20px; /* Space between stacked columns */
+    }
+
+    .social-icons-row {
+        justify-content: center; /* Center icons for smaller screens */
+    }
+}

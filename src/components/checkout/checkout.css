@@ -1,0 +1,204 @@
+/* Banner Section */
+.banner {
+    display: flex;
+    background: url('/assets/images/bg_1.webp');
+    height: 40vh;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner h1 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  /* Cart Section */
+  .cart-section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th, .cart-table td {
+    padding: 20px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color:#000;
+    border-bottom:  solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .cart-table th {
+    color:#fff;
+    background-color: #82ae46;
+  }
+  
+  .checkout-product-image {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  /* Cards Container */
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    width: 72%;
+    margin: 0 auto;
+    box-sizing: border-box; /* Include padding in width calculation */
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  
+  .card {
+    flex: 1; /* Make cards take equal space */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px; /* Internal padding inside cards */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    background-color: #fff; /* White background for cards */
+  }
+
+  .card h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    font-family: "Poppins", Arial, sans-serif;
+    letter-spacing: 0.8px;
+  }
+
+.cart-total {
+  font-weight: bold;
+}
+  .card p {
+    margin-top:15px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+
+  .coupon-input {
+    height: 10%;
+    width: 100%; /* Full width inside card */
+    padding: 15px; /* Internal padding for input fields */
+    margin: 10px 0; /* Space between input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in dimensions */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .shipping-form input {
+    height: 10%;
+    width: 100%; /* Full width inside card */
+    padding: 15px; /* Internal padding for input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in dimensions */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  /* Buttons Below Cards */
+.apply-btn, .checkout-btn {
+    display: block; /* Ensure block-level behavior */
+    margin-top: 10px; /* Space above buttons */
+    width: 60%; /* Full width buttons */
+    padding: 20px; /* Space inside buttons */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded corners */
+    background-color: #82ae46; /* Primary blue */
+    color: #fff; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    text-align: center;
+}
+/* Specific rule for .checkout-btn */
+.checkout-btn {
+  margin-top: 30px; /* Override margin-top for this button */
+}
+.apply-btn:hover, .checkout-btn:hover, .show-now-link:hover{
+   border: 1px solid #82ae46;
+   background: transparent;
+   color: #82ae46;
+}
+.cart-empty {
+  text-align: center; /* Centers content horizontally */
+  vertical-align: middle; /* Ensures vertical alignment in the cell */
+}
+
+.cart-empty img {
+  width:200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+  margin-bottom: 10px;
+}
+
+.show-now-link {
+  text-decoration: none;
+  color:#fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-top: 20px;
+  background: #82ae46;
+}
+
+.cart-total-divider {
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.btn-1 {
+    width: 100%; /* Ensure the button spans full width */
+    text-align: center; /* Center the button container */
+}
+
+.cart-empty {
+  text-align: center;
+}
+
+  .shipping-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .txt-box-1 {
+    padding: 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center; /* Center the text horizontally */
+    line-height: 20px; /* Matches the height to center the text vertically */
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  .card p span {
+    display: block;
+    width: 50%;
+  }

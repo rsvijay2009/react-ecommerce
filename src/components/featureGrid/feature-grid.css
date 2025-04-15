@@ -1,0 +1,80 @@
+.feature-grid {
+    display: grid; /* Switch to CSS Grid for better control */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust based on screen size */
+    gap: 15px; /* Consistent spacing between items */
+    padding: 0 20px; /* Equal spacing on left and right of the grid */
+    margin: 20px auto; /* Center the grid */
+    max-width: 1200px; /* Prevent the grid from stretching too wide */
+    margin-top: 70px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px; /* Optional rounded corners for each feature */
+    transition: transform 0.3s ease; /* Add subtle hover effect */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px; /* Icon container width */
+    height: 80px; /* Icon container height */
+    border-radius: 50%; /* Fully rounded for a circular look */
+    color: white; /* Icon color */
+    font-size: 36px; /* Icon size */
+    margin: 0 auto 15px; /* Center the icon */
+}
+
+
+/* Applying colors for each icon */
+.icon-container:nth-child(1) {
+    background-color: #ff6f61; /* Red */
+}
+
+.icon-container:nth-child(2) {
+    background-color: #4caf50; /* Green */
+}
+
+.icon-container:nth-child(3) {
+    background-color: #ffd700; /* Yellow */
+}
+
+.icon-container:nth-child(4) {
+    background-color: #2196f3; /* Blue */
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .icon-container {
+        width: 70px; /* Smaller container for icons */
+        height: 70px;
+        font-size: 30px; /* Reduce icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-container {
+        width: 60px; /* Smallest size for icons */
+        height: 60px;
+        font-size: 24px; /* Further reduce icon size */
+    }
+}

@@ -1,0 +1,41 @@
+.partners-section {
+    display: flex;
+    flex-direction: column; /* Stack the heading and container */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+.partners-container {
+    display: flex;
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center; /* Align logos vertically */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 30px; /* Add space between logos */
+}
+
+.partner-logo {
+    width: 150px; /* Set consistent width for logos */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    margin: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .partners-container {
+        gap: 15px; /* Reduce space between logos */
+    }
+
+    .partner-logo {
+        width: 100px; /* Resize logos for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .partner-logo {
+        width: 80px; /* Further adjust logo size for very small screens */
+    }
+}

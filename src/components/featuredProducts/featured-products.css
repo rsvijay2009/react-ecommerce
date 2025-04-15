@@ -1,0 +1,135 @@
+/* Featured Products Section */
+.featured-products {
+    margin: 0 auto;
+    max-width: 1200px; /* Ensures content is centered */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #82ae46;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.section-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+    border: 1px solid #f0f0f0; /* Thin grey border */
+    overflow: hidden; /* Prevent overflow from images */
+    display: flex;
+    flex-direction: column; /* Stacks image and content vertically */
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out; /* Add hover effect */
+    height: 100%; /* Ensure card height adjusts to content */
+    position: relative; /* Needed for proper positioning */
+}
+
+/* Product Image */
+.product-image {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: flex-end; /* Align the image lower in the container */
+    height: 150px; /* Fixed height for the image container */
+    position: relative; /* Maintain stacking context */
+    box-sizing: border-box; /* Ensures padding and borders are included in dimensions */
+    margin-top: 20px; /* Move the image lower in the grid card */
+}
+
+.product-image img {
+    max-height: 100%; /* Image scales within the card */
+    max-width: 100%; /* Prevents overflowing horizontally */
+    object-fit: contain; /* Ensures the image is fully visible while maintaining aspect ratio */
+    display: block;
+    transition: transform 0.3s ease-in-out; /* Keeps hover effect */
+}
+
+.product-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-sizing: border-box; /* Prevent overlay issues */
+    object-fit: contain;
+    max-height: 100%; /* Image scales within the card */
+    max-width: 100%; /* Prevents overflowing horizontally */
+}
+
+/* Product Info */
+.product-info {
+    text-align: center;
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin: 10px 0; /* Space above and below the title */
+    font-size: 1rem; /* Adjustable font size for the product name */
+    font-weight: 400;
+}
+
+.product-info p {
+    margin: 10px; /* No unnecessary space around price */
+    color: #333; /* Darker text for better readability */
+    font-size: 1rem; /* Font size for price */
+    font-weight: bold;
+}
+
+.add-to-cart-btn {
+    background-color: #82ae46;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #6e9a3b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Two columns for tablet screens */
+        gap: 15px; /* Reduced space between cards */
+    }
+
+    .product-card {
+        height: auto; /* Adjust card height for smaller screens */
+    }
+
+    .product-image {
+        height: 200px; /* Adjust image height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+
+    .product-card {
+        height: auto; /* Compact height for very small screens */
+    }
+
+    .product-image {
+        height: 120px; /* Compact image height for very small screens */
+    }
+}

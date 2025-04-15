@@ -1,0 +1,152 @@
+/* Section Styling */
+.testimonial-section {
+    display: flex; /* Use Flexbox for centering */
+    flex-direction: column; /* Keep content stacked vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 40px 20px;
+    box-sizing: border-box; /* Include padding in height calculations */
+    text-align: center; /* Center-align text inside the section */
+}
+
+.testimonial-header h2 {
+    font-size: 24px;
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    color:#82ae46;
+}
+
+.testimonial-header h1 {
+    font-size: 24px;
+    color: #000;
+}
+
+.testimonial-header p {
+    margin-bottom:40px;
+}
+
+.divider {
+    border: 0; /* Remove default border */
+    height: 1px; /* Set the thickness of the line */
+    background-color: #ccc; /* Light grey color */
+    margin: 0; /* Add spacing above and below the line */
+}
+
+.testimonial-carousel {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflowing items */
+}
+
+/* Testimonial Item Styling */
+.testimonial-item {
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Aligns content horizontally at the center */
+    text-align: center; /* Centers text inside each item */
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* User Image Styling */
+.user-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonial-user-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Circular user images */
+    object-fit: cover; /* Keeps image proportions */
+}
+
+/* Content Styling */
+.testimonial-content p {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+    align-items: center;
+    line-height: 1.8;
+}
+
+.user-name {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.user-position {
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Slick Dots Styling */
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: #ddd;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #82ae46;
+}
+
+.pl-4 {
+    padding-left:1.5rem;
+}
+
+.mb-5 {
+    margin-bottom:3rem;
+}
+
+.line {
+    position: relative;
+    border-left: 2px solid #82ae46;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .testimonial-carousel .testimonial-item {
+        padding: 15px;
+    }
+
+    .testimonial-item.with-separator::after {
+        right: -5px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-user-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonial-section {
+        padding: 20px;
+        height: auto; /* Let content dictate height */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-header h2 {
+        font-size: 24px;
+    }
+
+    .testimonial-user-image {
+        width: 60px;
+        height: 60px;
+    }
+}

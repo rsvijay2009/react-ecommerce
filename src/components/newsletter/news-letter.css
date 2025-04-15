@@ -1,0 +1,122 @@
+/* Outer Container Styling */
+.newsletter-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 20vh; /* Full viewport height */
+    background-color: #f7f6f2; /* Grey background color */
+    padding: 0 40px; /* Gap on the left and right sides */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Grid Layout */
+.newsletter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal grids */
+    gap: 40px; /* Space between left and right grids */
+    max-width: 1200px; /* Limit width */
+    width: 100%; /* Full width for responsive design */
+    box-sizing: border-box;
+}
+
+/* Left Grid Styling */
+.grid-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.newsletter-title {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.newsletter-subtitle {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+    font-weight:400;
+    color: gray;
+}
+
+/* Right Grid Styling */
+.grid-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.email-input {
+    width: 100%; /* Adjust width */
+    min-width: 480px; /* Minimum width for responsiveness */
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Rounded corners for input */
+    outline: none;
+}
+
+.send-button {
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #82ae46; /* Green color */
+    border: none;
+    border-radius: 0 4px 4px 0; /* Rounded corners for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #5c8c34; /* Darker green on hover */
+}
+
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    position: absolute; /* Position relative to parent section */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 50px;
+    height: 50px;
+    background-color: #82ae46; /* Green background */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: bounce 1.5s infinite; /* Add bounce animation */
+    z-index: 10; /* Ensure it appears on top */
+}
+
+.scroll-icon {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .newsletter-grid {
+        grid-template-columns: 1fr; /* Stack grids vertically */
+        gap: 20px; /* Smaller gap for narrow screens */
+    }
+
+    .grid-left {
+        text-align: center; /* Center-align text on small screens */
+    }
+
+    .grid-right {
+        justify-content: center; /* Center the form */
+    }
+
+    .email-input {
+        width: 70%; /* Adjust input width for responsiveness */
+    }
+}
